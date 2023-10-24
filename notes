@@ -1,0 +1,2 @@
+"start": "react-scripts start",
+    "build": "CI= react-scripts build",
