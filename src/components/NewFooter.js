@@ -14,8 +14,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-const authorMenu = [<LinkedInIcon />, <GitHubIcon />, <InstagramIcon />, <FacebookIcon />];
-
 const defaultInstagram = 'https://www.instagram.com/holbertonaus/';
 const defaultFacebook = 'https://www.facebook.com/HolbertonSchoolAustralia';
 
@@ -70,35 +68,45 @@ function NewFooter() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <span>Made with <span role="img" aria-label="loveHeart" style={{ color: 'red' }}>♥️</span> in Melbourne Australia 2023 by</span>
-          <Box sx={{ flexGrow: 0, p: 1 }}>
-            <Tooltip title="Open authorMenu">
-              <IconButton onClick={handleOpenAuthorMenu} sx={{ p: 1 }}>
-                <Avatar alt={authorContact[0].name} src={authorContact[0].avatar} />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '-45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElAuthor}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElAuthor)}
-              onClose={handleCloseAuthorMenu}
-            >
-              {authorMenu.map((authorMenuItem) => (
-                <MenuItem key={authorMenuItem} onClick={handleCloseAuthorMenu}>
-                  <Typography textAlign="center"><a href={authorContact[0].linkedin}>{authorMenuItem}</a></Typography>
+
+          {/* {settings.map((setting) => (
+                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+              ))} */}
+
+          {authorContact.map((author) => (
+            <Box key={author} sx={{ flexGrow: 0, p: 1 }}>
+              <Tooltip title="Open authorMenu">
+                <IconButton onClick={handleOpenAuthorMenu} sx={{ p: 1 }}>
+                  <Avatar alt={author.name} src={author.avatar} />
+                </IconButton>
+              </Tooltip>
+              <Menu
+                sx={{ mt: '-45px' }}
+                id="menu-appbar"
+                anchorEl={anchorElAuthor}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorElAuthor)}
+                onClose={handleCloseAuthorMenu}
+              >
+                <MenuItem onClick={handleCloseAuthorMenu} sx={{ flexDirection: 'column' }}>
+                  <Typography textAlign="center"><a target="_blank" href={author.linkedin}><LinkedInIcon /></a></Typography>
+                  <Typography textAlign="center"><a target="_blank" href={author.github}><GitHubIcon /></a></Typography>
+                  <Typography textAlign="center"><a target="_blank" href={author.instagram}><InstagramIcon /></a></Typography>
+                  <Typography textAlign="center"><a target="_blank" href={author.facebook}><FacebookIcon /></a></Typography>
+                </MenuItem>
+              </Menu>
+            </Box>
+          ))}
         </Toolbar>
       </Container>
     </AppBar>
