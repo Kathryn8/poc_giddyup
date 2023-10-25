@@ -1,17 +1,13 @@
 import SearchBar from "./SearchBar"
 import React from 'react';
 import MyImage from '../images/icon.png';
-import { Container } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 
 const Hero = () => {
   return (
-    <>
-      <h1>GiddyUP</h1>
-      <p>
-        Choose your chariot today!
-      </p>
-      <Container
+    <Container>
+      <Box
         sx={{
           backgroundImage: `url(${MyImage})`,
           backgroundSize: '20%',
@@ -23,10 +19,10 @@ const Hero = () => {
           backgroundRepeat: 'repeat-x',
         }}
       >
-
-      </Container >
+      </Box >
+      <h1>F*ck the user</h1>
       <SearchBar />
-    </>
+    </Container>
   )
 }
 export default Hero

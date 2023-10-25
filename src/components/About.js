@@ -1,27 +1,23 @@
-import aboutImg from '../images/about.jpeg';
+import aboutImg from '../images/stats.png';
 import Title from './Title';
 import React from 'react';
 
 const About = () => {
   return (
     <section className='section' id='about'>
-      <Title title='about' subTitle='us' />
+      <Title title='the' subTitle='stats' />
 
       <div className='section-center about-center'>
         <div className='about-img'>
           <img src={aboutImg} className='about-photo' alt='awesome beach' />
         </div>
         <article className='about-info'>
-          <h3>explore the difference</h3>
+          <h3>did you know?</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-            unde dolor?
+            With 35 kilometers daily commute, 0.12 Euro cents per kilometer in fuel costs and 120 grams in CO2 emissions on average, Carployee manages significant savings in all directions.
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-            unde dolor?
+            For employees and companies.
           </p>
           <a href='#' className='btn'>
             read more

@@ -12,7 +12,7 @@ const SearchBar = () => {
         <BasicSelect text='start' />
         <BasicSelect text='end' />
         <BasicDatePicker />
-        <Button variant="contained" sx={{ padding: 2, minWidth: { xs: '230px', md: '120px' }, height: '55px' }} > GiddyUP!</Button>
+        <Button variant="contained" sx={{ margin: '3px', padding: 2, minWidth: { xs: '230px', md: '120px' }, height: '55px' }} > GiddyUP!</Button>
       </Box>
     </div >
   )

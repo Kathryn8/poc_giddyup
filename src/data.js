@@ -1,3 +1,4 @@
+
 import tour1 from './images/tour-1.jpeg';
 import tour2 from './images/tour-2.jpeg';
 import tour3 from './images/tour-3.jpeg';
@@ -18,21 +19,21 @@ export const socialLinks = [
 export const services = [
   {
     id: 1,
-    icon: 'fas fa-wallet fa-fw',
-    title: 'saving money',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+    icon: '1',
+    title: 'Sign up',
+    text: "No matter where you're going, by bus or carpool, find the perfect ride from our wide range of destinations and routes at low prices.",
   },
   {
     id: 2,
-    icon: 'fas fa-tree fa-fw',
-    title: 'endless hiking',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+    icon: '2',
+    title: 'Log into your dashboard',
+    text: "We take the time to get to know each of our members and bus partners. We check reviews, profiles and IDs, so you know who you're travelling with and can book your ride at ease on our secure platform.",
   },
   {
     id: 3,
-    icon: 'fas fa-socks fa-fw',
-    title: 'amazing comfort',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.',
+    icon: '3',
+    title: 'Scroll, click and go!',
+    text: "Booking a ride has never been easier! Thanks to our simple app powered by great technology, you can book a ride close to you in just minutes.",
   },
 ];
 

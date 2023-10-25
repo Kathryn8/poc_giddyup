@@ -6,7 +6,7 @@ import React from 'react';
 const Services = () => {
   return (
     <section className='section services' id='services'>
-      <Title title='our' subTitle='services' />
+      <Title title='how to' subTitle='get galloping' />
 
       <div className='section-center services-center'>
         {services.map((service) => {

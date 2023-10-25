@@ -82,6 +82,8 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+  text-align: center;
+
 }
 h2 {
   font-size: 2rem;
@@ -248,8 +250,9 @@ About
     height: 100%;
     border: 0.5rem solid var(--clr-primary-5);
     box-sizing: border-box;
-    top: -1.5rem;
-    left: -1.5rem;
+    z-index: 10;
+    /* top: -1.5rem;
+    left: -1.5rem; */
   }
 
   .about-img {
