@@ -6,7 +6,7 @@ import { Container, Box } from "@mui/material";
 
 const Hero = () => {
   return (
-    <Container>
+    <Container sx={{ p: 4 }}>
       <Box
         sx={{
           backgroundImage: `url(${MyImage})`,

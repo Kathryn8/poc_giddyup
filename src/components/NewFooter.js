@@ -20,6 +20,7 @@ const defaultFacebook = 'https://www.facebook.com/HolbertonSchoolAustralia';
 const authorContact = [
   {
     name: 'Bryce',
+    id: 1,
     avatar: 'https://avatars.githubusercontent.com/u/124347057?v=4',
     linkedin: 'https://www.linkedin.com/in/bryceknight16/',
     github: 'https://github.com/BryceKnight16',
@@ -28,6 +29,7 @@ const authorContact = [
   },
   {
     name: 'Eva',
+    id: 2,
     avatar: 'https://avatars.githubusercontent.com/u/124496441?v=4',
     linkedin: 'https://www.linkedin.com/in/eva-m-a3405073/',
     github: 'https://github.com/EvaMicich',
@@ -36,6 +38,7 @@ const authorContact = [
   },
   {
     name: 'Bryan',
+    id: 3,
     avatar: 'https://avatars.githubusercontent.com/u/124537848?v=4',
     linkedin: 'https://www.linkedin.com/in/bryan-f-231b78162/',
     github: 'https://github.com/BryanField15',
@@ -44,6 +47,7 @@ const authorContact = [
   },
   {
     name: 'Kathryn',
+    id: 4,
     avatar: 'https://avatars.githubusercontent.com/u/124414205?v=4',
     linkedin: 'https://www.linkedin.com/in/kathryn-kelly-7b10b3243/',
     github: 'https://github.com/Kathryn8',
@@ -76,7 +80,7 @@ function NewFooter() {
               ))} */}
 
           {authorContact.map((author) => (
-            <Box key={author} sx={{ flexGrow: 0, p: 1 }}>
+            <Box key={author.id} sx={{ flexGrow: 0, p: 1 }}>
               <Tooltip title="Open authorMenu">
                 <IconButton onClick={handleOpenAuthorMenu} sx={{ p: 1 }}>
                   <Avatar alt={author.name} src={author.avatar} />
