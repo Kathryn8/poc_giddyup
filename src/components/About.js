@@ -1,4 +1,4 @@
-import aboutImg from '../images/stats.png';
+import aboutImg from '../assets/images/stats.png';
 import Title from './Title';
 import React from 'react';
 

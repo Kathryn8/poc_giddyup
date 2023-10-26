@@ -1,6 +1,6 @@
 import SearchBar from "./SearchBar"
 import React from 'react';
-import MyImage from '../images/icon.png';
+import MyImage from '../assets/images/icon.png';
 import { Container, Box } from "@mui/material";
 
 
@@ -20,7 +20,7 @@ const Hero = () => {
         }}
       >
       </Box >
-      <h1>F*ck the user</h1>
+      <h1>giddyUP!</h1>
       <SearchBar />
     </Container>
   )

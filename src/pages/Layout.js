@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { ThemeProvider } from '@mui/material';
+import muiTheme from '../muiTheme';
 import { Outlet, useNavigation } from 'react-router-dom';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import NewFooter from '../components/NewFooter';
@@ -11,6 +12,7 @@ const Layout = () => {
   const value = 'some value';
   return (
     <>
+    <ThemeProvider theme={muiTheme}>
       <ResponsiveAppBar />
       <section className='page'>
         {isPageLoading ? (
@@ -20,6 +22,7 @@ const Layout = () => {
         )}
       </section>
       <NewFooter />
+      </ThemeProvider>
     </>
   );
 };
