@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import SvgIconChildren from './SvgIconChildren';
 
-const pages = ['Search', 'Stats', 'Steps'];
+const pages = ['Dashboard', 'Stats', 'Steps'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {

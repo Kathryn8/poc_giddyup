@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
 import TripCard from '../components/TripCard';
 import About from '../components/About';
+
+
 const UserDashboard = () => {
   return (
     <>
@@ -15,6 +17,7 @@ const UserDashboard = () => {
       </header>
       <h1>USERS DASHBOARD!</h1>
       <SearchBar/>
+      <h3 styles ={{textAlign: 'center'}}>Upcoming Trips</h3>
       <TripCard/>
       <About/>
     </>

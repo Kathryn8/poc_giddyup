@@ -9,8 +9,8 @@ const SearchBar = () => {
   return (
     <div>
       <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: 'center', justifyContent: 'center', bgcolor: 'white', p: 1.5 }}>
-        <BasicSelect text='start' />
-        <BasicSelect text='end' />
+        <BasicSelect text='Origin' />
+        <BasicSelect text='Destination' />
         <BasicDatePicker />
         <Button variant="contained" sx={{ margin: '3px', padding: 2, minWidth: { xs: '230px', md: '120px' }, height: '55px' }} > GiddyUP!</Button>
       </Box>
