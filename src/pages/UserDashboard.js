@@ -3,22 +3,21 @@ import { Link } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
 import TripCard from '../components/TripCard';
 import About from '../components/About';
-
+import BookedTrips from '../components/BookedTrips';
 
 const UserDashboard = () => {
   return (
     <>
+      <Link to='/' className='btn'>
+        back home
+      </Link>
       {/* <h1 styles={{ minHeight: '600px' }}>test</h1> */}
-      <h1>hi there</h1>
-      <header>
-        <Link to='/' className='btn'>
-          back home
-        </Link>
-      </header>
-      <h1>USERS DASHBOARD!</h1>
+      <h1 style={{ padding: '32px'}}>hi there, Bryce</h1>
       <SearchBar/>
-      <h3 styles ={{textAlign: 'center'}}>Upcoming Trips</h3>
-      <TripCard/>
+      <h2 style={{ padding: '32px', textAlign:'center' }}>Upcoming Trips</h2>
+       {/* <h3 style={{ padding: '32px', textAlign:'center' }}> You have no upcoming Trips...</h3>
+      <TripCard/> */}
+      <BookedTrips/>
       <About/>
     </>
 
